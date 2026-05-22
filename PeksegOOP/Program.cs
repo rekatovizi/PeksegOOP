@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Pogacsa p1 = new Pogacsa("sajtos pogi", 230, 5);
-			Console.WriteLine(p1);
+            Console.WriteLine(p1);
             p1.Megkostol();
             Console.WriteLine(p1);
 
@@ -23,6 +23,16 @@
             Croissant c = new Croissant("croissant", 300, 10, " lekváros");
             c.Megkostol();
             Console.WriteLine(c);
-		}
+
+
+            List<IArlap> termekek = new List<IArlap>() { p1, p2, t, t1, c };
+            termekek.Add(new Kave(220, true));
+            termekek.Add(new Kave(220, false));
+            termekek.Add(new Kave(120, true));
+            foreach (var item in termekek)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }

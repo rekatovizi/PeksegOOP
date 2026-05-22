@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PeksegOOP
 {
-	internal abstract class Peksutemeny
+	internal abstract class Peksutemeny : IArlap
 	{
 		protected string neve;
 		protected int ar;
@@ -25,6 +25,11 @@ namespace PeksegOOP
 		public double Mennyiseg { get => mennyiseg; set => mennyiseg = value; }
 
 		public abstract void Megkostol();
+
+		public int MennyibeKerul()
+		{
+			return (int)(this.ar * this.mennyiseg);
+		}
 
 		public override string ToString()
 		{
