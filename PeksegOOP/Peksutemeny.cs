@@ -33,7 +33,7 @@ namespace PeksegOOP
 
 		public override string ToString()
 		{
-			return $"{this.neve} {this.mennyiseg} darab/dkg {this.ar}";
+			return $"{this.neve} {this.mennyiseg} darab/dkg {this.MennyibeKerul()} Ft";
 		}
 
 	}
