@@ -24,7 +24,7 @@ namespace PeksegOOP
 		}
 		public override string ToString()
 		{
-			return base.ToString + this.iz;
+			return base.ToString() + this.iz;
 		}
 	}
 }

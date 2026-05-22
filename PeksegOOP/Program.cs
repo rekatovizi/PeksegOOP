@@ -15,11 +15,14 @@
 
             p2.Megkostol();
             Console.WriteLine(p2);
-
             t.Megkostol();
             Console.WriteLine(t);
             t1.Megkostol();
             Console.WriteLine(t1);
-        }
+
+            Croissant c = new Croissant("croissant", 300, 10, " lekváros");
+            c.Megkostol();
+            Console.WriteLine(c);
+		}
     }
 }
